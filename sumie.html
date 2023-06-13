@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style3.css">
+    <title>Sumi-e</title>
+</head>
+<body>
+    <div class="slide" id="Sumi-e">
+    <header>
+        <div id="logo">
+            <img src="Accueil/Logo.png" alt="">
+            <h1>L'Empire Du Papier Vivant</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="accueil.html#Présentation">Présentation</a></li>
+                <li><a href="accueil.html#Galerie">Galerie</a></li>
+                <li><a href="accueil.html#Bio">Qui-Suis-Je ?</a></li>
+                <li><a href="accueil.html#Contact">Contact</a></li>
+            </ul>
+            <div id="menuburger">
+                <div class="ligne" id="l1"></div>
+                <div class="ligne" id="l2"></div>
+                <div class="ligne" id="l3"></div>
+            </div>
+            <div id="menus">
+                <ul>
+                    <li><a href="#Home">Accueil</a></li>
+                    <li><a href="#Présentation">Présentation</a></li>
+                    <li><a href="#Galerie">Galerie</a></li>
+                    <li><a href="#Bio">Qui-Suis-Je ?</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="blocgaleries">
+        <div id="titresumie"><h1>Le Sumi-E</h1></div>
+        <div id="textesumie">
+            <img src="Sumi-e/sumi-e.png" alt="">
+            <p>Dites aussi peinture TCh'an, "Sumi" signifie encre noire et le "e" signifie peinture.
+                Comme son nom l'indique donc le Sumi-e est pratiqué que à l'encre noire. Il a comme sujet l'observation de la nature, tracé au pinceau sur une simple feuille de papier blanc, il permet de représenter le modèle le plus complexe.
+                
+                Elle a été introduite au Japon par des moines zen ( bouddhismes zen )
+                
+                " Par sa main le peintre laisse une trace indélébile sur le papier. Par sa posture, son souffle, il engage toute sa personne. "</p>
+            
+        </div>
+        <h2>Ses Oeuvres :</h2>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="Sumi-e/image1.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Sumi-e/image2.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Sumi-e/image4.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Sumi-e/photo1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                    <img src="Sumi-e/photo2.JPG" />
+              </div>
+              <div class="swiper-slide">
+                    <img src="Sumi-e/photo 3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Sumi-e/photo 4.JPG" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Sumi-e/photo 5.JPG" />
+              </div>
+              <div class="swiper-slide">
+                <img src="Sumi-e/photo 6$.JPG" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+    
+</body>
+</html>

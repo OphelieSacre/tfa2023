@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Biographie</title>
+</head>
+<body>
+    <div class="slide" id="PeintureChinoise">
+    <header>
+        <div id="logo">
+            <img src="Accueil/Logo.png" alt="">
+            <h1>L'Empire Du Papier Vivant</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="accueil.html#Présentation">Présentation</a></li>
+                <li><a href="accueil.html#Galerie">Galerie</a></li>
+                <li><a href="accueil.html#Bio">Qui-Suis-Je ?</a></li>
+                <li><a href="accueil.html#Contact">Contact</a></li>
+            </ul>
+            <div id="menuburger">
+                <div class="ligne" id="l1"></div>
+                <div class="ligne" id="l2"></div>
+                <div class="ligne" id="l3"></div>
+            </div>
+            <div id="menus">
+                <ul>
+                    <li><a href="#Home">Accueil</a></li>
+                    <li><a href="#Présentation">Présentation</a></li>
+                    <li><a href="#Galerie">Galerie</a></li>
+                    <li><a href="#Bio">Qui-Suis-Je ?</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="expos">
+        <div id="titreexpos"><h1>Les expositions</h1></div>
+        <div id="bloce">
+            <div id="expo1">
+                <img src="Biographie/photo.png" alt="">
+                <p>
+                    <ul id="ulb">
+                    <li>Exposition 2010 : Plein Vent à Boisfort</li>
+                    <li> Exposition 2011 à l’ancienne école de calligraphie du Japon à Watermaal Boisfort</li>
+                    <li>Exposition lors du 12 ème Concours “Chinese Language Bridge” Belgium division qui s'est tenu à Bruxelles le samedi 31 mars 2012 à la Maison du Dragon.</li>
+                    <li>Exposition le geste libre à la Galerie Espace 14 eme Art à Wavre du 14 au 17 juin 2012.</li>
+                    <li>Exposition au Restaurant La Brise (septembre 2012) Laeken.</li>
+                    <li> Exposition pour la Société Euler Hermes Europe Décembre 2012 au H2 Studio à Bruxelles.</li>
+                    <li>Exposition (mai - juin 2013) au centre artistique LR6.</li>
+                    <li>Exposition Colors Espace 8 à Saint-Gilles Worshop Salon Made in Asia ( Palais 5 du Heyzel) Mars 2015.</li>
+                    <li>Exposition Zodiac Piola.Libri Janvier 2015.</li>
+                    <li> Expositions Carte de visite pour la ville de Bruxelles.</li>
+                    <li>Chine Ink and its Journey to the West , mars 2018.</li>
+                    <li>Peinture et calligraphie arts majeurs en Chine à l’Hôtel de Ville de Tournai</li>
+                    <li>Parcours artistes Berchem Ste Agathe Aout 2019.</li>
+                </ul>
+            </p>
+            </div>
+            <div id="expo2">
+                <p>
+                    <ul id="ulb2">
+                        <li>Exposition La ferme rose à Uccle.</li>
+                        <li>Parcours des artistes à Wezembeek-Oppem (Mars 2022). à l’Espace l’Atelier 64 (décembre 2022).</li>
+                        <li>Echange artistique en Chine 2013 (Dandong) organisé par l'Institut Confucius de Liège sur le Thème : une année de Calligraphie et en collaboration avec le centre culturel chinois Zhong Ren.</li>
+                        <li>Workshop Chine 2013 Shan Fang Art Gallery.</li>
+                        <li>Exposition Chine 2019 Belgian Artist China Tour Art Gallery Nanking.</li>
+                        <li>Exposition Chine 2019 au Yixing museum.</li>
+                        <li>Workshop Peinture porcelaine, Chine 2019 à Jingdezhen.</li>
+                        <li>Workshop pour Euler Hermes ( Allianz ) Novembre 2019.</li>
+                        <li>Participation au concours national Pass museum : sélectionner par le vote du public pour L’Expo Nationale et... retenu dans la présélection. Plus de 2 000 artistes ont posé leur candidature. Sélectionné parmis les 200 œuvres qui ont obtenu le plus de votes et mon travail en fait partie.</li>
+                        <li>Workshop Février 2022 pour Korian Groupe.</li>
+                        <li>Participation à la fresque international L’Art du nouveau monde (Février 2022).</li>
+                   </ul>
+            </p>
+            <img src="Biographie/photo 2.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        const titre = document.querySelector('#logo h1')
+
+        window.addEventListener('scroll',()=>{
+
+scrolling = document.documentElement.scrollTop || window.scrollY ||
+window.pageYOffset || document.body.scrollTop
+console.log('scrolling')
+
+if(scrolling>10){
+    // console.log('ok')
+    titre.classList.add('scrol')
+}else if(scrolling < 10)
+{
+    // console.log('pas ok')
+    titre.classList.remove('scrol')
+}
+})
+    </script>
+
+    
+</body>
+</html>

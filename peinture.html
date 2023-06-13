@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style2.css">
+    <title>La peinture chinoise</title>
+</head>
+<body>
+    <div class="slide" id="PeintureChinoise">
+    <header>
+        <div id="logo">
+            <img src="Accueil/Logo.png" alt="">
+            <h1>L'Empire Du Papier Vivant</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="accueil.html#Présentation">Présentation</a></li>
+                <li><a href="accueil.html#Galerie">Galerie</a></li>
+                <li><a href="accueil.html#Bio">Qui-Suis-Je ?</a></li>
+                <li><a href="accueil.html#Contact">Contact</a></li>
+            </ul>
+            <div id="menuburger">
+                <div class="ligne" id="l1"></div>
+                <div class="ligne" id="l2"></div>
+                <div class="ligne" id="l3"></div>
+            </div>
+            <div id="menus">
+                <ul>
+                    <li><a href="#Home">Accueil</a></li>
+                    <li><a href="#Présentation">Présentation</a></li>
+                    <li><a href="#Galerie">Galerie</a></li>
+                    <li><a href="#Bio">Qui-Suis-Je ?</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="blocgaleriep">
+        <div id="titrepeinture"><h1>La peinture chinoise</h1></div>
+        <div id="textepeint">
+            <img src="PeintureChinoise/eventail.png" alt="">
+            <div><p>L'art pictural traditionnel exercé en Chine depuis la préhistoire, on l'a retrouvée peinte sur les grottes et utilisée comme peinture murale pour les palais et les temples. Elle est pratiquée plus généralement sur des rouleaux ou des éventails de soie ou de papier.</p>
+                <p>La peinture chinoise est constituée majoritairement de :
+                    <ul id="ulp">
+                        <li>Paysages et peintures narratives</li>
+                        <li>Fleurs et oiseaux</li>
+                        <li>Personnages et Animaux</li>
+                        <li>Peinture religieuse</li>
+                    </ul>
+                </p>
+            </div>
+            
+        </div>
+        <h2>Ses Oeuvres :</h2>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="PeintureChinoise/photo 2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="PeintureChinoise/photo 3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="PeintureChinoise/photo 9.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="PeintureChinoise/photo 4.jpg" />
+              </div>
+              <div class="swiper-slide">
+                    <img src="PeintureChinoise/photo 5.jpg" />
+              </div>
+              <div class="swiper-slide">
+                    <img src="PeintureChinoise/photo 6.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="PeintureChinoise/photo 7.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="PeintureChinoise/photo 8.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="PeintureChinoise/photo 1.jpg" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </div>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+    <!-- Initialize Swiper -->
+  <script>
+    console.log(swiper)
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+    
+</body>
+</html>

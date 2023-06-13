@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@font-face{
+    font-family: calligraphy;
+    src: url(typo/lucida\ calligraphy\ italic.ttf);
+}
+@font-face{
+    font-family: chine;
+    src: url(typo/CHOWFUN_.TTF);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+
+    overflow-x: hidden;
+}
+
+.slide{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image: url(Accueil/Background\ slide.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.calslide{
+    width: 60px;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    margin-left: 70px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* box-shadow: 0 -3px 5px black; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header #logo{
+    width: 30%;
+    margin-left: 0px;
+    text-align: center;
+    line-height: 100px;
+    /* background-color: antiquewhite; */
+    font-family: 'Alice', serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+header #logo h1{
+    font-weight: 400;
+    font-size: 40px;
+    transition: all 1s;
+    /* left: 0;
+    position: relative; */
+}
+
+header #logo img{
+    width: 70px;
+    height: 70px;
+    align-self: center;
+
+}
+
+header nav{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    /* background-color: rgb(173, 178, 255); */
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+    position: relative;
+    left: 0;
+    transition: all 1s;
+    /* background-color: rgb(225, 148, 255); */
+    align-items: center;
+}
+
+header nav ul li{
+    border-right: solid 2px black;
+    width: 200px;
+    height: 25px;
+    /* background-color: rgb(247, 215, 250); */
+    text-align: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-family: chine;
+    line-height: 25px;
+}
+
+header nav ul li a:hover{
+
+    border-bottom: solid 1px black;
+    transition: all 1s;
+}
+
+.scroll{
+    position: relative;
+    left: 100%;
+}
+
+.scrol{
+    left: -110%;
+    position: relative;
+}
+
+#menuburger{
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    height: 50px;
+    /* background-color: rgb(221, 185, 255); */
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+}
+
+.ligne{
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    position: relative;
+    border-radius: 20px;
+    transition: all 1s;
+    /* margin-top: 10px; */
+    /* mettre une margin à la place de flex */
+}
+
+.active-menu #l1{
+    transform:rotate(45deg) translate(5px,18px);
+}
+
+.active-menu #l2{
+    opacity: 0;
+}
+
+.active-menu #l3{
+    transform: rotate(-45deg) translate(5px,-18px);
+}
+
+.mobile{
+    display: flex !important;
+}
+
+.open{
+    left: 40% !important;
+}
+
+#menus{
+    width: 1000px;
+    height: 50px;
+    position: absolute;
+    left: 200%;
+    /* background-color: rgba(250, 235, 215, 0.445); */
+    transition: all 1s;
+    line-height: 50px;
+}
+
+#menus ul li{
+    background-image: url(Accueil/ligne\ 3.png);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+
+
+                                /* **** Home **** */
+
+
+#Bambou{
+    width: 45%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}            
+
+#bloca{
+    height: 140px;
+    width: 1200px;
+    /* background-color: rgb(177, 188, 255); */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+#artiste{
+    /* background-color: rgb(211, 177, 255); */
+    height: 50%;
+    width: 100%;
+    font-family: calligraphy;
+    line-height: 75px;
+    background-image: url(Accueil/ligne\ 3.png);
+    background-position: center center;
+    background-size: cover;
+    animation-name: artiste;
+    animation-duration: 2s;
+    position: relative;
+}
+
+#artiste h1{
+    font-weight: 400;
+    font-size: 50px;
+    margin-left: 190px;
+}
+
+#art{
+    /* background-color: rgb(237, 177, 255); */
+    height: 50%;
+    width: 100%;
+    margin-left: 150px;
+    font-family: chine;
+    text-align: center;
+    line-height: 70px;
+    animation-name: artiste;
+    animation-duration: 2.3s;
+    position: relative;
+}
+
+#art h2{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+@keyframes artiste{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+
+}
+
+
+
+
+                            /* **** Présentation **** */
+
+#blocp{
+    text-align: center;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    font-family: chine;
+    margin-top: 50px;
+    font-size: 25px;
+    /* overflow: hidden; */
+}  
+
+#blocp img{
+    height: 30px;
+}
+
+#video{
+    width: 1200px;
+    height: 600px;
+    align-self: center;
+    background-color: rgb(220, 169, 255);
+    margin-top: 80px;
+    box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.299);
+}
+
+
+                                  /* **** Galerie **** */
+
+
+#blocg{
+    text-align: center;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    font-family: chine;
+    margin-top: 50px;
+    font-size: 25px;
+}    
+
+#blocg img{
+    height: 30px;
+}
+
+#galeriet{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-top: 70px;
+}
+
+#galeriet h2:nth-child(2){
+    margin-right: 120px;
+}
+
+#galeriet h2:nth-child(3){
+    margin-right: 100px;
+}
+
+#galerie{
+    /* background-color: rgb(229, 189, 255); */
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 45px;
+}
+
+#galerie img{
+    width: 21%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#galerieb{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.boutond{
+    /* background-color: rgb(241, 184, 255); */
+    background-image: url(Accueil/peinture.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: none;
+    width: 300px;
+    height: 50px;
+    font-family: chine;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.boutond a{
+    text-decoration: none;
+    display: block;
+}
+
+.boutond h4{
+    margin-top: 12px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+                                    /* **** Bio **** */
+
+
+                                    
+#blocb{
+    text-align: center;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    font-family: chine;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+#blocb img{
+    height: 50px;
+
+}
+
+#bio img{
+    width: 90%;
+    height: 50%;
+    margin-top: 50px;
+}
+
+#bio p{
+    font-size: 16px;
+    margin-top: 25px;
+}
+#boutonb{
+    margin-top: 60px;
+    /* background-color: rgb(201, 242, 255); */
+    background-image: url(Accueil/peinture.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: none;
+    width: 350px;
+    height: 45px;
+    font-family: chine;
+    font-weight: 400;
+    text-align: center;
+    margin: 50px auto;
+}
+
+#boutonb a{
+    text-decoration: none;
+}
+
+#boutonb h4{
+    color: black;
+    margin-left: 45px;
+}
+
+                                  /* **** Contact **** */
+
+#blocc{
+    text-align: center;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    font-family: chine;
+    margin-top: 50px;
+    font-size: 25px;
+}     
+
+#blocc img{
+    height: 30px;
+}
+
+#contact{
+    width: 80%;
+    height: 60%;
+    /* background-color: rgb(215, 185, 248); */
+    margin-top: 50px;
+    align-self: center;
+}
+
+#contact p{
+    font-family: chine;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.p{
+    border-bottom: solid 1px black;
+
+}
+
+.input{
+    width: 100%;
+    font-size: 25px;
+    font-family: chine;
+    margin-left: 20px;
+    border: none;
+    background-color: rgba(250, 235, 215, 0);
+
+}
+
+#contact textarea{
+    width: 100%;
+    background-color: rgba(250, 235, 215, 0);
+    border: solid 1px black;
+}
+
+#envoyer{
+    background-color: rgba(250, 235, 215, 0);
+    width: 250px; 
+    font-size: 25px;
+    font-family: chine;
+    margin-left: 20px;
+    background-image: url(Accueil/peinture.png);
+    background-position: center center ;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+}
+
+.swiper {
+    width: 90%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 0px;
+  }
+
+  .swiper-slide {
+    width: 230px;
+    height: 450px;
+    /* background-color: rgb(255, 144, 237); */
+
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+                             /* **** Calligraphie Japonaise **** */
+
+#blocgaleriec{
+    width: 95%;
+    height: 900px;
+    /* background-color: antiquewhite; */
+    margin: 170px 50px;
+    font-family: chine;
+}
+
+
+
+#titrecal{
+    /* background-color: rgb(175, 175, 255); */
+    background-image: url(Calligraphiejaponaise/lignep.png);
+    background-position: center center;
+    background-size: contain;
+    width: 40%;
+    height: 9%;
+    text-align: center;
+    line-height: 90px;
+}
+
+
+#textecal{
+    display: flex;
+    /* background-color: rgb(255, 184, 249); */
+    width: 80%;
+    height: 19%;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+#textecal p{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#blocgaleriec h2{
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+#texteo{
+    /* background-color: mediumpurple; */
+    margin-top: 50px;
+}
+
+#pinceaux{
+    /* background-color: plum; */
+    display: flex;
+    height: 400px;
+}
+
+#pinceaux p {
+    margin-left: 45px;
+    line-height: 30px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+#pinceaux img{
+    height: 100%;
+}
+
+
+#encre{
+    display: flex;
+    height: 300px;
+    /* background-color: lightpink; */
+    margin-top: 50px;
+}
+
+#encre p{
+    line-height: 30px;
+    margin-top: 25px;
+    margin-right: 45px;
+    text-align: justify;
+
+}
+
+#encre img{
+    width: 40%;
+}
+
+
+
+                             /* **** Biographie **** */
+
+#expos{
+    width: 90%;
+    height: 900px;
+    /* background-color: antiquewhite; */
+    margin: 170px 50px;
+    font-family: chine;
+
+}   
+
+#titreexpos{
+    background-image: url(Calligraphiejaponaise/lignep.png);
+    background-position: center center;
+    background-size: contain;
+    width: 40%;
+    height: 9%;
+    text-align: center;
+    line-height: 90px;
+}
+
+#bloce{
+    /* background-color: mediumpurple; */
+    margin-top: 45px;
+
+}
+
+#expo1{
+    /* background-color: plum; */
+    display: flex;
+    height: 400px;  
+}
+
+#ulb{
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+#ulb2{
+    margin-left: 50px;
+    margin-right: 25px;
+}
+#expo2{
+    display: flex;
+    height: 340px;
+    /* background-color: lightpink; */
+    margin-top: 50px;
+}
+
+
+
+
+

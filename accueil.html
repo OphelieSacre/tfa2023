@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Accueil</title>
+</head>
+<body>
+
+    <div class="slide" id="Home">
+        <header>
+            <div id="logo">
+                <img src="Accueil/Logo.png" alt="">
+                <h1>L'Empire Du Papier Vivant</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#Home">Accueil</a></li>
+                    <li><a href="#Présentation">Présentation</a></li>
+                    <li><a href="#Galerie">Galerie</a></li>
+                    <li><a href="#Bio">Qui-Suis-Je ?</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                <div id="menuburger">
+                    <div class="ligne" id="l1"></div>
+                    <div class="ligne" id="l2"></div>
+                    <div class="ligne" id="l3"></div>
+                </div>
+                <div id="menus">
+                    <ul>
+                        <li><a href="#Home">Accueil</a></li>
+                        <li><a href="#Présentation">Présentation</a></li>
+                        <li><a href="#Galerie">Galerie</a></li>
+                        <li><a href="#Bio">Qui-Suis-Je ?</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div id="bloca">
+            <div id="artiste"><h1>Christian Van Cauteren</h1></div>
+            <div id="art"><h2>Peinture chinoise, Calligraphie japonaise, Sumi-e</h2></div>
+        </div>
+
+        <img src="Accueil/panda.png" alt="panda" id="Bambou">
+    </div>
+
+                            <!-- ---- Présentation ---- -->
+
+    <div class="slide" id="Présentation">
+        <img src="Accueil/calligraphie slide/présentation.png" alt="cal" class="calslide">
+
+        <div class="wrapper" id="blocp">
+            <h1>Présentation</h1>
+            <img src="Accueil/lignea/pres.png" alt="ligne">
+            <div id="video"></div>
+        </div>
+    </div>
+    <div class="slide" id="Galerie">
+        <img src="Accueil/calligraphie slide/galerie.png" alt="cal" class="calslide">
+        <div id="blocg" class="wrapper">
+            <h1>Galerie</h1>
+            <img src="Accueil/lignea/galerie.png" alt="ligne">
+            <div id="galeriet">
+                <h2>La calligraphie japonaise</h2>
+                <h2>La peinture chinoise</h2>
+                <h2>Le Sumi-e</h2>
+            </div>
+            <div id="galerie">
+                <img src="Calligraphiejaponaise/calligraphie.png" alt="">
+                <img src="PeintureChinoise/peinturechinoise.png" alt="">
+                <img src="Sumi-e/sumie.jpg" alt="">
+            </div>
+            <div id="galerieb">
+                <div class="boutond"><a href="calligraphie.html"><h4>Découvrir</h4></a></div>
+                <div class="boutond"><a href="peinture.html"><h4>Découvrir</h4></a></div>
+                <div class="boutond"><a href="sumie.html"><h4>Découvrir</h4></a></div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="slide" id="Bio">
+        <img src="Accueil/calligraphie slide/qui suis je.png" alt="" class="calslide">
+        <div id="blocb" class="wrapper">
+            <h1>Qui-Suis-Je ?</h1>
+            <img src="Accueil/lignea/bio.png" alt="ligne">
+            <div id="bio">
+                <img src="Accueil/Bio.png" alt="">
+                <p><strong>Christian</strong> est un artiste belge qui a été attiré par le bouddhisme, en pratiquant cette religion pendant plusieurs années dans Dojo Zen des Pagodes de Bruxelles, il s'est vu attiré par l'art asiatique petit à petit. Il a très vite commencé à aimer l'art japonais, ce qu'il a le plus aimé c'est l'Ikebana, un art floral japonais de sculpture de fleur. C'est un art traditionnel du Japon, art du pinceau et de la voie des fleurs. Il a commencé une école de calligraphie japonaise où il a du arrêter le bouddhisme pour se concentrer sur cette pratique qu'il fallait exercer tout les jours. Il trouvait aussi que le bouddhisme devenait trop religieux pour lui. Ensuite il a poursuivi avec des stages sur le Sumi-E à l'école du Dragon. Il a découvert que le Sumi-E était un art visuel facile à comprendre. Ainsi que des études sur la peinture chinoise avec un artiste chinois, Zhang Wenhai.</p>
+                <div id="boutonb"><a href="bio.html"><h4>En savoir plus...</h4></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="slide" id="Contact">
+        <img src="Accueil/calligraphie slide/contact.png" alt="cal" class="calslide">
+        <div id="blocc" class="wrapper">
+            <h1>Contact</h1>
+            <img src="Accueil/lignea/contact.png" alt="ligne">
+            <div id="contact">
+                <p class="p"><input type="text" name="Nom" id="Nom" class="input" placeholder="Nom"></p>
+                <p class="p"><input type="text" class="input" placeholder="Prénom"></p>
+                <p class="p"><input type="email" class="input" placeholder="E-mail"></p>
+                <p class="p">Message</p>
+                <p><textarea name="Message" id="" cols="30" rows="10"></textarea></p>
+                <p><input type="submit" value="Envoyer" id="envoyer"></p>
+            </div>
+        </div>
+        
+        </div>
+
+    </div>
+
+
+    <script>
+
+        const navigation = document.querySelector('header nav ul')
+        const menuburger = document.querySelector('#menuburger')
+        const titre = document.querySelector('#logo h1')
+        const menu = document.querySelector('#menus')
+        const menus = document.querySelectorAll('#menus ul li')
+
+        console.log(menus)
+
+        for(item of menus)
+        {
+            item.addEventListener('click',()=>{
+                menu.classList.remove('open')
+                menuburger.classList.remove('active-menu')
+            })
+        }
+        var scrolling
+
+        window.addEventListener('scroll',()=>{
+
+            scrolling = document.documentElement.scrollTop || window.scrollY ||
+            window.pageYOffset || document.body.scrollTop
+            console.log('scrolling')
+
+            if(scrolling>10){
+                // console.log('ok')
+                navigation.classList.add('scroll')
+                menuburger.classList.add('mobile')
+                titre.classList.add('scrol')
+            }else if(scrolling < 10)
+            {
+                // console.log('pas ok')
+                navigation.classList.remove('scroll')
+                menuburger.classList.remove('mobile')
+                titre.classList.remove('scrol')
+            }
+        })
+        menuburger.addEventListener('click',()=>{
+            menuburger.classList.toggle('active-menu')
+            menu.classList.toggle('open')
+        })
+
+    </script> 
+    
+</body>
+</html>
